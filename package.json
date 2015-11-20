@@ -1,0 +1,25 @@
+{
+	"name": "nsis",
+	"description": "Nullsoft Scriptable Install System support for VS Code",
+	"version": "0.0.1",
+	"publisher": "Krystof Riha",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "nsis",
+			"aliases": ["NSIS", "nsis"],
+			"extensions": [".nsi",".nsh"],
+			"configuration": "./nsis.configuration.json"
+		}],
+		"grammars": [{
+			"language": "nsis",
+			"scopeName": "source.nsis",
+			"path": "./syntaxes/nsis.tmLanguage"
+		}]
+	}
+}
